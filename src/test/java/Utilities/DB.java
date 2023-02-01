@@ -69,11 +69,6 @@ public class DB implements DBMethods {
         return rs;
     }
 
-    public ResultSet runSelectQuery(String columnName, String tableName) throws SQLException {
-        String query = "select " + columnName + " from " + tableName;
-        rs = stt.executeQuery(query);
-        return rs;
-    }
 
     @Override
     public void runUpdateQuery(String query) throws SQLException {
